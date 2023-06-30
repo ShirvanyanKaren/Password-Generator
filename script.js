@@ -38,6 +38,7 @@ var numbersPass = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 var specialChar = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"]
 
+var availableChars
 // Write password to the #password input
 //Function called write password
 function writePassword() {
@@ -54,32 +55,49 @@ function writePassword() {
   // Must prompt used for password length (8-128)
 var lengthPass = prompt("How many characters would you like your password to be? Choose between 8-128?");
 
-if (!lengthPass){
-  alert("Number of Characters Required");
-}
-else if (lengthPass < 8 || lengthPass > 128){
-alert("Number must be between 8 and 128");
-}
-else {
+//Created a loop that keeps prom
+  while (lengthPass < 8 || lengthPass > 128 || !lengthPass){
+  alert("Number must be between 8 and 128");
+  lengthPass = prompt("Choose between 8-128");
+  }
+
+// if (){
+//   alert("Number of Characters Required");
+//   lengthPass = prompt("Choose between 8-128")
+// }
+
+if (lengthPass => 8 && lengthPass <= 128) { 
   // Confirm if user wants upper/lower characters
 var confirmUpper = confirm("Would you like to use upper case characters?");
+var confirmLower = confirm("Would you like to use upper case characters?");
 // Confirm if user wants to use numbers and special characters
 var confirmNum = confirm("Would you like to use numbers?");
-var confirmSpecial = confirm("Would you like to use special ;characters?")
+var confirmSpecial = confirm("Would you like to use special characters?");
 // Based on choices, create availableChars variable to assign them to
 }
+while (!confirmNum && !confirmSpecial && !confirmLower && !confirmUpper) {
+alert("You have to select atleast one attribute.");
+var confirmUpper = confirm("Would you like to use upper case characters?");
+var confirmLower = confirm("Would you like to use upper case characters?");
+var confirmNum = confirm("Would you like to use numbers?");
+var confirmSpecial = confirm("Would you like to use special characters?");
+ if(confirmNum && confirmSpecial && confirmLower && confirmUpper) {
+  var availableChars= numbersPass.concat(lowerChar, upperChar, specialChar)
+ } 
+else if (confirmNum && confirmSpecial ){
 
+ }
+ else if (confirmNum && confirmSpecial){
 
+ }
 
+else if (confirmNum && confirmSpecial) {
 
-
-
-
-
-
-
+ }
 }
 
+
+} 
 
 
 // Add event listener to generate button
