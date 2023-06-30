@@ -81,20 +81,30 @@ var confirmUpper = confirm("Would you like to use upper case characters?");
 var confirmLower = confirm("Would you like to use upper case characters?");
 var confirmNum = confirm("Would you like to use numbers?");
 var confirmSpecial = confirm("Would you like to use special characters?");
- if(confirmNum && confirmSpecial && confirmLower && confirmUpper) {
-  var availableChars= numbersPass.concat(lowerChar, upperChar, specialChar)
- } 
-else if (confirmNum && confirmSpecial ){
+ 
+// if(confirmNum && confirmSpecial && confirmLower && confirmUpper) {
+//   availableChars= numbersPass.concat(lowerChar, upperChar, specialChar)
+//  } 
+ 
 
- }
- else if (confirmNum && confirmSpecial){
-
- }
-
-else if (confirmNum && confirmSpecial) {
-
- }
+if (confirmLower) {
+  availableChars += lowerChar;
 }
+if (includeUppercase) {
+  availableChars += upperChar;
+}
+if (includeNumeric) {
+  availableChars += numbersPass;
+}
+if (includeSpecial) {
+  availableChars += specialChar;
+
+}
+
+for
+
+}
+
 
 
 } 
