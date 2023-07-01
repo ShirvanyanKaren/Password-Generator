@@ -129,7 +129,7 @@ function genPassword() {
   if (confirmSpecial) {
     availableChars = availableChars.concat(specialChar);
   }
-  
+
   // created for loop that generates password given the user choices, and continues until outcom is equal to the lengthPass stated by user
   for (var i = blankPass.length; i < lengthPass; i++) {
     userOutput = availableChars[Math.floor(Math.random() * availableChars.length)]
@@ -137,7 +137,6 @@ function genPassword() {
     console.log(userOutput);
   }
   //We push the blackPass var and join it to ("") so password can output the result as a string value which then becomes navigated to passwordText
-
   //shuffle blanpass as your own challenge
   var password = shuffle(blankPass);
   return password.join('');
