@@ -57,7 +57,7 @@ function genPassword() {
 
   // Must prompt used for password length (8-128) 
   var lengthPass = Number(prompt("How many characters would you like your password to be? Choose between 8-128?"));
-  if (isNaN(lengthPass)){
+  if (isNaN(lengthPass)) {
     alert("Input must be number");
     return null;
   }
@@ -86,7 +86,7 @@ function genPassword() {
 
   var blankPass = [];
 
-//Created a randomizer for the confirms that ensures 
+  //Created a randomizer for the confirms that ensures 
   if (confirmLower) {
     guaranteeChar = lowerChar[Math.floor(Math.random() * lowerChar.length)];
     blankPass.push(guaranteeChar);
@@ -103,19 +103,19 @@ function genPassword() {
     guaranteeChar = specialChar[Math.floor(Math.random() * specialChar.length)];
     blankPass.push(guaranteeChar);
   }
-//these if statements are to ensure that if the user only chooses one option, the loop runs through it as availableChar
+  //these if statements are to ensure that if the user only chooses one option, the loop runs through it as availableChar
   if (confirmLower) {
-      availableChars = lowerChar;
-    }
-    if (confirmUpper) {
-      availableChars = upperChar;
-    }
-    if (confirmNum) {
-      availableChars = numbersPass;
-    }
-    if (confirmSpecial) {
-      availableChars = specialChar;
-    }
+    availableChars = lowerChar;
+  }
+  if (confirmUpper) {
+    availableChars = upperChar;
+  }
+  if (confirmNum) {
+    availableChars = numbersPass;
+  }
+  if (confirmSpecial) {
+    availableChars = specialChar;
+  }
 
   if (confirmLower) {
     availableChars = availableChars.concat(lowerChar);
@@ -129,10 +129,7 @@ function genPassword() {
   if (confirmSpecial) {
     availableChars = availableChars.concat(specialChar);
   }
-
-
   
-
   // created for loop that generates password given the user choices, and continues until outcom is equal to the lengthPass stated by user
   for (var i = blankPass.length; i < lengthPass; i++) {
     userOutput = availableChars[Math.floor(Math.random() * availableChars.length)]
@@ -150,13 +147,14 @@ function genPassword() {
 
 // Add event listener to generate button
 
+// created shuffler that randomly positions
 function shuffle(a) {
   var j, x, i;
   for (i = a.length - 1; i > 0; i--) {
-      j = Math.floor(Math.random() * (i + 1));
-      x = a[i];
-      a[i] = a[j];
-      a[j] = x;
+    j = Math.floor(Math.random() * (i + 1));
+    x = a[i];
+    a[i] = a[j];
+    a[j] = x;
   }
   return a;
 }
