@@ -4,7 +4,7 @@
 
 | Technology Used         | Resource URL           | 
 | ------------- |:-------------:| 
-| Javascript    | [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) |   
+| Javascript    | [https://developer.mozilla.org/en-US/docs/Web/JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |   
 | Git | [https://git-scm.com/](https://git-scm.com/)     | 
 | Deployed Site | [https://shirvanyankaren.github.io/Password-Generator/](https://shirvanyankaren.github.io/Password-Generator/)     | 
 | My Github Repository | [https://github.com/ShirvanyanKaren/Password-Generator](https://github.com/ShirvanyanKaren/Password-Generator/)     | 
@@ -125,6 +125,12 @@ This was my first time creating an application with javascript and there were a 
 ## Credits
 
 Dennis Itua from the Central Tutor Center helped a lot with improving the functionality of the password generator and implementing the shuffle function and guaranteed character portion of the if statements.
+
+*[Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+*[Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+[Array Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#Instance_methods)
+[Scoping](hhttps://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Variable_scope)
+
 
 ## License 
 
